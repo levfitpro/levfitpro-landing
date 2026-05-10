@@ -15,26 +15,13 @@ export function Navbar() {
       }}
     >
       <div className="container mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="flex items-center gap-2.5">
-          <img
-            src="https://grazia-prod.oss-ap-southeast-1.aliyuncs.com/resources/uid_100047948/03b412c3-4a6e-46.png"
-            alt="LevFit Pro"
-            crossOrigin="anonymous"
-            className="w-9 h-9 rounded-lg"
-            style={{ boxShadow: "0 0 24px hsl(var(--neon-lime) / 0.35)" }}
-          />
-          <span
-            className="font-extrabold tracking-tight flex items-baseline"
-            style={{ fontFamily: "'Outfit', sans-serif", fontSize: "20px", letterSpacing: "-0.02em" }}
-          >
-            <span style={{ color: "hsl(var(--foreground))" }}>LevFit</span>
-            <span style={{ color: "hsl(var(--neon-lime))", marginLeft: "5px" }}>Pro</span>
-          </span>
+        <div className="flex items-center">
+          <img src="/logo-navbar.png" alt="LevFit Pro" className="h-9 w-auto" />
         </div>
 
         <div className="hidden md:flex items-center gap-8">
           {["Benefícios", "Comunidade", "Lançamento"].map((item) => (
-            <a
+            
               key={item}
               href="#"
               className="font-body mono text-sm transition-colors duration-200 uppercase tracking-wider"
@@ -62,7 +49,7 @@ export function Navbar() {
           >
             ● VIP Ativo
           </span>
-          <a
+          
             href={WHATSAPP_GROUP_URL}
             target="_blank"
             rel="noopener noreferrer"
@@ -95,7 +82,7 @@ export function Navbar() {
           }}
         >
           {["Benefícios", "Comunidade", "Lançamento"].map((item) => (
-            <a
+            
               key={item}
               href="#"
               className="font-body mono text-sm uppercase tracking-wider"
@@ -104,7 +91,7 @@ export function Navbar() {
               {item}
             </a>
           ))}
-          <a
+          
             href={WHATSAPP_GROUP_URL}
             target="_blank"
             rel="noopener noreferrer"
