@@ -21,7 +21,7 @@ export function Navbar() {
 
         <div className="hidden md:flex items-center gap-8">
           {["Benefícios", "Comunidade", "Lançamento"].map((item) => (
-            
+            <a
               key={item}
               href="#"
               className="font-body mono text-sm transition-colors duration-200 uppercase tracking-wider"
@@ -49,7 +49,7 @@ export function Navbar() {
           >
             ● VIP Ativo
           </span>
-          
+          <a
             href={WHATSAPP_GROUP_URL}
             target="_blank"
             rel="noopener noreferrer"
@@ -82,7 +82,7 @@ export function Navbar() {
           }}
         >
           {["Benefícios", "Comunidade", "Lançamento"].map((item) => (
-            
+            <a
               key={item}
               href="#"
               className="font-body mono text-sm uppercase tracking-wider"
@@ -91,7 +91,7 @@ export function Navbar() {
               {item}
             </a>
           ))}
-          
+          <a
             href={WHATSAPP_GROUP_URL}
             target="_blank"
             rel="noopener noreferrer"
@@ -104,3 +104,4 @@ export function Navbar() {
     </nav>
   );
 }
+
