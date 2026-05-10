@@ -1,4 +1,4 @@
-import { Instagram, MessageCircle, Zap } from "lucide-react";
+import { Instagram, MessageCircle } from "lucide-react";
 import { WHATSAPP_GROUP_URL, INSTAGRAM_URL } from "@/lib/links";
 
 const socials = [
@@ -14,24 +14,13 @@ export function Footer() {
     >
       <div className="container mx-auto px-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-2.5">
-            <div
-              className="w-9 h-9 rounded-lg flex items-center justify-center"
-              style={{
-                background: "var(--gradient-brand)",
-                boxShadow: "0 0 20px hsl(var(--neon-mint) / 0.4)",
-              }}
-            >
-              <Zap className="w-4 h-4" style={{ color: "hsl(var(--background))" }} strokeWidth={2.5} />
-            </div>
-            <span className="font-display font-extrabold text-lg tracking-tight gradient-text-static">
-              LevFit Pro
-            </span>
+          <div className="flex items-center">
+            <img src="/logo-footer.png" alt="LevFit Pro" className="h-8 w-auto" />
           </div>
 
           <div className="flex items-center gap-2">
             {socials.map(({ icon: Icon, href, label, hsl }) => (
-              <a
+              
                 key={label}
                 href={href}
                 target="_blank"
